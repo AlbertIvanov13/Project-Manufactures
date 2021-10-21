@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp45
+namespace Manufactures
 {
     class Program
     {
