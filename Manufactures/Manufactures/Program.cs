@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Manufactures.Data;
+using Manufactures.Presentation;
+using System;
 
 namespace Manufactures
 {
@@ -6,7 +8,9 @@ namespace Manufactures
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ProductContext db = new ProductContext();
+            db.Database.EnsureCreated();
+            Display display = new Display();
         }
     }
 }
